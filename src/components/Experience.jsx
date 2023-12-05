@@ -6,6 +6,12 @@ import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import angular from "../assets/angular.png";
+import azure from "../assets/azure.png";
+import docker from "../assets/docker.png";
+import netCore from "../assets/netCore.png";
+import mongoDB from "../assets/mongoDB.png";
+import typescript from "../assets/typescript.png";
 
 const Experience = () => {
   const techs = [
@@ -41,18 +47,42 @@ const Experience = () => {
     },
     {
       id: 6,
-      src: "nextjs",
-      title: "Next JS",
+      src: typescript,
+      title: "TypeScript",
       style: "shadow-white",
     },
     {
       id: 7,
-      src: "graphql",
-      title: "GraphQL",
-      style: "shadow-pink-400",
+      src: angular,
+      title: "Angular",
+      style: "shadow-red-400",
     },
     {
       id: 8,
+      src: netCore,
+      title: ".NET Core",
+      style: "shadow-purple-400",
+    },
+    {
+      id: 9,
+      src: azure,
+      title: "Azure",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 10,
+      src: docker,
+      title: "Docker",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 11,
+      src: mongoDB,
+      title: "MongoDB",
+      style: "shadow-green-400",
+    },
+    {
+      id: 12,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
@@ -72,7 +102,7 @@ const Experience = () => {
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-4 sm:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
